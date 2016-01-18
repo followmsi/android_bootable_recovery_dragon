@@ -55,6 +55,7 @@ public:
 	static int32_t timespec_diff_ms(timespec& start, timespec& end);            // Returns diff in ms
 
 #ifndef BUILD_TWRPTAR_MAIN
+	static void restore_fastboot(void);					    // Restores Fastboot Full Cap on the Pixel C
 	static void install_htc_dumlock(void);                                      // Installs HTC Dumlock
 	static void htc_dumlock_restore_original_boot(void);                        // Restores the backup of boot from HTC Dumlock
 	static void htc_dumlock_reflash_recovery_to_boot(void);                     // Reflashes the current recovery to boot
