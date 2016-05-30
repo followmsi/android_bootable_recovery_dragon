@@ -1,4 +1,4 @@
-on init
+on fs
     start watchdogd
     mkdir /config
     mount configfs none /config
